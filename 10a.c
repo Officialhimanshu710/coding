@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
-   int Maths,Science,English,Hindi,sst,sum,percentage;
+   int Maths,Science,English,Hindi,sst,percentage;
    printf("enter the Maths marks = ");
    scanf("%d",&Maths);
    printf("enter the English marks = ");
@@ -11,11 +11,24 @@ int main(){
    scanf("%d",&sst);
    printf("enter the Science marks = ");
    scanf("%d",&Science);
-   sum = Maths+Science+English+Hindi+sst;
-   printf("sum is = %d",sum);
-   printf("\n");
    percentage = (Maths+Science+English+Hindi+sst)/5;
-  printf("percentage is = %d",percentage);
-   
+  printf("percentage is = %d\n",percentage);
+  if(percentage<=100&&percentage>90){
+    printf("Grade A");
     return 0;
+  }
+    if(percentage<=90&&percentage>80){
+    printf("Grade B");
+    return 0;
+  }
+   if(percentage<=80&&percentage>=60){
+    printf("Grade C");
+    return 0;
+  }
+   else{
+    printf("Grade D");
+    return 0;
+  }
+ 
+    
 }
