@@ -1,0 +1,5 @@
+a = int(input("enter the first no = "))
+b = int(input("enter the second no = "))
+print("sum is = ", a+b)
+print("diff is = ",a-b)
+print("mod. is = ",a%b)
